@@ -1,16 +1,23 @@
-# This is a sample Python script.
+import msvcrt, sys
 
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+method='__orientation, year, car, emka, dancho_bratan, wh, aldik'
+method2='Human2'
+while True:
+    method_count=0
+    # methode1= input(method)
+    for i in method:
+        if i.isalpha():
+         if i in method:
+                method_count +=1
+                if msvcrt.kbhit():
+                   k = ord(msvcrt.getch())
+                sys.exit()
+
+        else:
+         print('Количество методов', str(len(method)))
 
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
 
 
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
 
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+
